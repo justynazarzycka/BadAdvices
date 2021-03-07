@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "content": "You don’t really need any equipment for camping",
+        "isFavorite": true
+    },
+    {
+        "id": 2,
+        "content": "The first step to failure is trying.",
+        "isFavorite": true
+    },
+    {
+        "id": 3,
+        "content": "It will probably get worse.",
+        "isFavorite": true
+    },
+    {
+        "id": 4,
+        "content": "It's never too late to start again, until it is.",
+        "isFavorite": false
+    },
+    {
+        "id": 5,
+        "content": "It's never too early to go back to bed.",
+        "isFavorite": false
+    },
+    {
+        "id": 6,
+        "content": "Hospitality staff will lose respect for you if you tip.",
+        "isFavorite": false
+    },
+    {
+        "id": 7,
+        "content": "You don’t need an electrician, just do it yourself.",
+        "isFavorite": false
+    },
+    {
+        "id": 8,
+        "content": "Permanent markers aren’t actually permanent.",
+        "isFavorite": false
+    },
+    {
+        "id": 9,
+        "content": "If you set low expectations you won't be disappointed.",
+        "isFavorite": false
+    },
+    {
+        "id": 10,
+        "content": "If you're ever bored, just see what's in the fridge.",
+        "isFavorite": false
+    },
+    {
+        "id": 11,
+        "content": "Every day is another chance to screw everything up again.",
+        "isFavorite": false
+    },
+    {
+        "id": 12,
+        "content": "The best things in life cost the most.",
+        "isFavorite": false
+    },
+]
