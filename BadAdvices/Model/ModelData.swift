@@ -9,14 +9,10 @@ import Foundation
 
 final class ModelData: ObservableObject {
     @Published var advices: [Advice] = load("advices.json")
-    
-    // TODO: - fing a better way to do this
+
     func getRandomAdvice() -> Advice {
-        let randomId: Int = Int.random(in: 1...advices.count)
-        let index = advices.firstIndex(where: { $0.id == randomId}) ?? 1
-        return advices[index]
+        return advices.randomElement()!
     }
-    
 }
 
 
