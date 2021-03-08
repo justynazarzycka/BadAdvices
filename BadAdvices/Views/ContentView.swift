@@ -19,7 +19,7 @@ struct ContentView: View {
                 }
             FavoritesList()
                 .tabItem {
-                    Image(systemName: "house")
+                    Image(systemName: "heart")
                     Text("Favorites")
                 }
         }
