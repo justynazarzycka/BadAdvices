@@ -10,6 +10,7 @@ import SwiftUI
 struct AdviceRow: View {
     var advice: Advice
     @State private var showDetail = false
+    var editMode: EditMode
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -21,18 +22,9 @@ struct AdviceRow: View {
                 
                 Spacer()
                 
-                Button(action: {
-                    withAnimation {
-                        self.showDetail.toggle()
-                    }
-                }, label: {
-                    Image(systemName: "chevron.right.circle")
-                        .foregroundColor(.blue)
-                        .imageScale(.large)
-                        .padding()
-                        .rotationEffect(.degrees(showDetail ? 90 : 0))
-                        .scaleEffect(showDetail ? 1.5 : 1.0)
-                })
+                if (!editMode.isEditing) {
+                    ExpandButton(showDetail: $showDetail)
+                }
             }
             .frame(width: 350, height: 50)
             .truncationMode(.tail)
@@ -48,6 +40,6 @@ struct AdviceRow: View {
 
 struct AdviceRow_Previews: PreviewProvider {
     static var previews: some View {
-        AdviceRow(advice: ModelData().advices[5])
+        AdviceRow(advice: ModelData().advices[5], editMode: EditMode.inactive)
     }
 }
