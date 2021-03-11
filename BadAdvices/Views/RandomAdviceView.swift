@@ -25,11 +25,15 @@ struct RandomAdviceView: View {
                 .padding()
                 .font(.title)
             
-            FavoriteButton(isSet: $modelData.advices[adviceIndex].isFavorite)
-            
+            HStack {
+                ShareButton(contentToShare: advice.content)
+                    .padding()
+                
+                FavoriteButton(isSet: $modelData.advices[adviceIndex].isFavorite)
+                    .padding()
+            }
             
             Spacer()
-            
             
             Button("New Advice") {
                 advice = modelData.getRandomAdvice()

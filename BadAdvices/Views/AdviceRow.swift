@@ -31,8 +31,15 @@ struct AdviceRow: View {
         
 
             if (showDetail) {
-                Text(advice.content)
-                    .padding(50)
+                HStack {
+                    Text(advice.content)
+                        .padding(50)
+                    
+                    ShareButton(contentToShare: advice.content)
+                        .padding()
+                        .buttonStyle(PlainButtonStyle())
+                        .foregroundColor(.blue)
+                }
             }
         }
     }
